@@ -1,16 +1,12 @@
-# Compiled class file
+# General
+# Compiled class files
 *.class
 
-# Log file
+# Logs
 *.log
+logs/
 
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
+# Package files
 *.jar
 *.war
 *.nar
@@ -19,6 +15,67 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+# Virtual machine crash logs
 hs_err_pid*
 replay_pid*
+
+# Gradle
+.gradle/
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# IntelliJ IDEA
+*.iml
+.idea/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Temp files
+*~
+*.swp
+.*.swp
+*.tmp
+*.temp
+
+# Generated files
+out/
+
+# Test reports and coverage
+coverage/
+*.lcov
+jacoco.exec
+
+# Environment variables
+.env
+
+# IDE specific caches and local files
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+
+# Node / front-end (if present)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Others
+# Backup files created by some editors
+
+# Keep this file tracked
+!.gitignore
