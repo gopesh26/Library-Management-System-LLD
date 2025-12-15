@@ -7,6 +7,16 @@ public class Book {
     private String ISBN;
     private int publicationYear;
 
+    public boolean isAvailable() {
+        return isAvailable;
+    }
+
+    public void setAvailable(boolean available) {
+        isAvailable = available;
+    }
+
+    private boolean isAvailable = true;
+
     public String getTitle() {
         return title;
     }
@@ -44,5 +54,16 @@ public class Book {
         this.author = author;
         this.ISBN = ISBN;
         this.publicationYear = publicationYear;
+    }
+
+    public String printBook() {
+        return new StringBuilder()
+                .append("Book{")
+                .append("title='").append(title).append("', ")
+                .append("author='").append(author).append("', ")
+                .append("isbn='").append(ISBN).append("', ")
+                .append("isAvailable='").append(isAvailable)
+                .append("}")
+                .toString();
     }
 }
